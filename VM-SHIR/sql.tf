@@ -26,7 +26,7 @@ resource "azurerm_mssql_server" "sqlserver" {
 
 
   tags = {
-    name = "gargash-dashboard-server"
+    name = "sqlDB-server"
   }
 
   outbound_network_restriction_enabled = false
@@ -48,7 +48,7 @@ resource "azurerm_mssql_database" "sqldb" {
   min_capacity                = 0.5
 
   tags = {
-    name = "gargash-dashboard-db"
+    name = "sql-db"
   }
 }
 
